@@ -166,3 +166,39 @@
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+
+.MGNG-img {
+   width: auto;
+    height: 100%;
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 245, 212, 0.5);
+}
+  .MGNG-img img {
+    width: 50%;
+    height: 50%;
+    border-radius: 06px;
+    box-shadow: 0 0 10px rgba(0, 245, 212, 0.5);
+  }
+  
+  .btn-animate {
+    background-color: #00f5d4;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.2s;
+  }
+  
+  .btn-animate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  .MGNG-img h8 {
+    color: #00f5d4;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-align: center;
+    
+  }
