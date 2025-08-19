@@ -1,1 +1,7 @@
-h
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://protofolionsw.netlify.app/">
+  <url>
+    <loc>https://www.example.com/foo.html</loc>
+    <lastmod>2022-06-04</lastmod>
+  </url>
+</urlset
