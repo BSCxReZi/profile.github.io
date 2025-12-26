@@ -1,196 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>M. Nazwa Kurniawan Portfolio</title>
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Animasi gambar project 2 */
-    .project-animate {
-      transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.4s;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      border-radius: 12px;
-    }
-    .project-animate:hover {
-      transform: scale(1.08) rotate(-2deg);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-    }
-    /* Animasi tombol */
-    .btn-animate {
-      background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
-      color: #fff;
-      border: none;
-      padding: 10px 22px;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-      box-shadow: 0 2px 8px rgba(108, 99, 255, 0.12);
-      margin-top: 12px;
-    }
-    .btn-animate:hover {
-      background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
-      transform: translateY(-4px) scale(1.07);
-      box-shadow: 0 8px 24px rgba(252, 92, 125, 0.18);
-    }
-    /* Fade-in animasi pada card */
-    .card {
-      opacity: 0;
-      transform: translateY(40px);
-      animation: fadeInUp 0.8s forwards;
-    }
-    .card:nth-child(1) { animation-delay: 0.1s; }
-    .card:nth-child(2) { animation-delay: 0.3s; }
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: none;
-      }
-    }
-    .project-desc-highlight {
-      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
-      font-size: 1.08rem;
-      font-weight: 600;
-      color: #fc5c7d;
-      background: linear-gradient(90deg, #fceabb 0%, #f8b500 100%);
-      padding: 8px 16px;
-      border-radius: 8px;
-      margin: 12px 0 0 0;
-      box-shadow: 0 2px 8px rgba(252, 92, 125, 0.10);
-      display: inline-block;
-      letter-spacing: 0.5px;
-      text-shadow: 0 2px 8px rgba(252, 92, 125, 0.10);
-      transition: background 0.3s, color 0.3s;
-    }
-    .project-desc-highlight:hover {
-      background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
-      color: #fff;
-    }
-  </style>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Portfolio.</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h2>Hello, It's Me <br><strong>M. Nazwa Kurniawan</strong><br> 
-        And I'm a <span>Pelajar SMK, Teknik Audio Video</span></h2>
-      <p>Saya adalah pelajar SMK yang memiliki minat dan kemampuan dalam pengembangan frontend maupun backend dengan Python saya lengkapi pengalaman dengan pernah Magang di LPP TVRI Kalimantan Selatan di bagian Teknik, di mana saya mengelola Ruang Transmisi dan juga bertugas sebagai kameramen/Audio.</p>
-      <button id="download-cv">Download CV</button>
-    </div>
-    <div class="hero-img">
-      <img src="R.png" alt="Profile">
-    </div>
-  </section>
+<!-- ===== HEADER ===== -->
+<header>
+  <h1>Portfolio.</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2 class="section-title">About <span>Me</span></h2>
-    <p>M. Nazwa Kurniawan
-Pelajar SMK yang bersemangat di bidang pengembangan web. Saya menguasai frontend dengan HTML, CSS, dan JavaScript, serta memiliki keahlian Python untuk backend. Saya pernah magang di LPP TVRI Kalimantan Selatan di bagian Teknik/Transmisi, yang melengkapi pengalaman praktis saya. 
-    <h2 class="section-title">Our <span>Services</span></h2>
-    <div class="services">
-      <div class="card">
-        <h3>Frontend Development</h3>
-        <p>Membuat tampilan website yang menarik dan responsif menggunakan HTML, CSS, dan JavaScript.</p>
-      </div>
-      <div class="card">
-        <h3>Backend Development</h3>
-        <p>bisa menganalisis dan mengembangkan backend menggunakan Python.
-      </div>
-      <div class="card">
-        <h3>Teknik/Transmisi</h3>
-        <p>dibidang teknik saya pernah mengoprasikan MCR (Master Control Room) di LPP TVRI Kalimantan Selatan serta mengoprasikan peralatan studio & subcontrol.</p>
-    </div>
-  </section>
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h2>
+      Hello, It's Me <br>
+      <strong>M. Nazwa Kurniawan</strong><br>
+      And I'm a <span>Pelajar SMK, Teknik Audio Video</span>
+    </h2>
 
+    <p>
+      Saya adalah pelajar SMK yang memiliki minat dalam pengembangan frontend dan backend
+      menggunakan Python. Saya pernah magang di LPP TVRI Kalimantan Selatan di bagian
+      Teknik/Transmisi serta bertugas sebagai kameramen dan audio.
+    </p>
+
+    <button id="download-cv">Download CV</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="R.png" alt="Profile">
+  </div>
+</section>
+
+<!-- ===== DIVIDER ===== -->
+<div class="section-divider"></div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <h2 class="section-title">About <span>Me</span></h2>
+
+  <p>
+    M. Nazwa Kurniawan adalah pelajar SMK yang bersemangat di bidang pengembangan web.
+    Menguasai HTML, CSS, JavaScript, dan Python untuk backend.
+    Berpengalaman magang di LPP TVRI Kalimantan Selatan pada bagian Teknik/Transmisi.
+  </p>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <h2 class="section-title">Our <span>Services</span></h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Frontend Development</h3>
+      <p>Membuat website responsif dan modern menggunakan HTML, CSS, dan JavaScript.</p>
+    </div>
+
+    <div class="card">
+      <h3>Backend Development</h3>
+      <p>Menganalisis dan mengembangkan backend menggunakan Python.</p>
+    </div>
+
+    <div class="card">
+      <h3>Teknik / Transmisi</h3>
+      <p>
+        Berpengalaman mengoperasikan MCR (Master Control Room),
+        peralatan studio, dan subcontrol di LPP TVRI.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MAGANG ===== -->
 <section id="MGNG">
-   <h1 class="section-title">Penagalaman <span>Magang</span></h1>
-    <div class="MGNG-img">
-      <div class="card">
-        <h8>Magang di LPP TVRI Kalimantan Selatan</h8>
-        <p>Bagian Teknik/Transmisi</p>
-        <img src="kamera.png" alt="MGNG" class="project-animate">
-        <p>Moment s berharga selama magang di LPP TVRI Kalimantan Selatan, mengelola ruang transmisi dan menjadi kameramen.</p>
-        <button class="btn-animate" onclick="window.open('https://drive.google.com/file/d/1T7ueX1I_1QOkQ-dIq44h8OOYjrVFGXeF/view', '_blank')">Lihat pengalaman saya</button>
-      </div>
+  <h2 class="section-title">Pengalaman <span>Magang</span></h2>
 
+  <div class="card">
+    <h3>LPP TVRI Kalimantan Selatan</h3>
+    <p>Bagian Teknik / Transmisi</p>
 
-       </div>
-  <section id="portfolio">
-    <h2 class="section-title">Latest <span>Project</span></h2>
-    <div class="projects">
+    <img src="kamera.png" alt="Magang TVRI">
 
-<div class="card">
-        <h3 style="margin-bottom:8px;">Project 1: Portfolio Website</h3>
-        <img src="p0.png" alt="Project 0" class="project-animate">
-        <p class="project-desc-highlight">Manajemen Kas Kelas Online — Cepat, Aman, dan Terintegrasi Excel.</p>
-        <button class="btn-animate" onclick="window.open('https://uang-kas-qay9.bolt.host', '_blank')">Lihat Project 1</button>
-</div>
+    <p>
+      Pengalaman berharga selama magang mengelola ruang transmisi
+      serta bertugas sebagai kameramen dan audio.
+    </p>
 
-      <div class="card">
-        <h3 style="margin-bottom:8px;">Project 2: Name Tag SMKN 1 PARINGIN</h3>
-        <img src="1.png" alt="Project 1" class="project-animate">
-        <p class="project-desc-highlight">Website ini dibuat untuk anak magang SMKN 1 PARINGIN, Sebuah Kemajuan pada Name Tag mereka yg bisa di scan lewat google dan nomor pembimbing yg lengkap! </p>
-        <button class="btn-animate" onclick="window.open('https://smkn1paringin.netlify.app/', '_blank')">Lihat Project 2</button>
+    <button onclick="window.open('https://drive.google.com/file/d/1T7ueX1I_1QOkQ-dIq44h8OOYjrVFGXeF/view','_blank')">
+      Lihat Pengalaman
+    </button>
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO ===== -->
+<section id="portfolio">
+  <h2 class="section-title">Latest <span>Project</span></h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Project 1: Portfolio Website</h3>
+      <div class="project-thumb">
+        <img src="p0.png" alt="Project 1">
       </div>
-      <div class="card">
-        <h3 style="margin-bottom:8px;">Project 3: Game Cloud Mabar</h3>
-        <img src="p2.png" alt="Project 2" class="project-animate">
-        <p class="project-desc-highlight">Game online seru yang bisa dimainkan bersama teman (mabar) langsung dari browser.</p>
-        <button class="btn-animate" onclick="window.open('https://gameonlinefree.netlify.app/', '_blank')">Lihat Project 3</button>
-      </div>
-      <div class="card">
-        <h4 style="margin-bottom:8px;">Project 4: Keuangan Secara Real time</h4>
-        <img src="p4.png" alt="Project 3" class="project-animate">
-        <p class="project-desc-highlight">Aplikasi keuangan yang memungkinkan pengguna untuk mengelola keuangan mereka secara real-time.</p>
-        <button class="btn-animate" onclick="window.open('https://viewers-duit.netlify.app/', '_blank')">Lihat Project 4</button>
-      </div>
-      <div class="card">
-          <h4 style="margin-bottom:8px;">Project 5: Website Tutorial Ardunio-IOT</h4>
-        <img src="p5.png" alt="Project 4" class="project-animate">
-        <p class="project-desc-highlight">Website yang mengajarkan bahasa program MicroController serta IOT berserta contoh "codenya"</p>
-        <button class="btn-animate" onclick="window.open('https://tutorial-ardunio-iot.netlify.app/', '_blank')">Lihat Project 5</button>
-      </div>
-      </div>
+      <p class="project-desc-highlight">
+        Manajemen Kas Kelas Online — Cepat, Aman, dan Terintegrasi Excel.
+      </p>
+      <button>Lihat Project</button>
     </div>
-  </section>
 
+    <div class="card">
+      <h3>Project 2: Name Tag SMKN 1 PARINGIN</h3>
+      <div class="project-thumb">
+        <img src="1.png" alt="Project 2">
+      </div>
+      <p class="project-desc-highlight">
+        Name tag digital dengan QR scan dan kontak pembimbing lengkap.
+      </p>
+      <button onclick="window.open('https://smkn1paringin.netlify.app/','_blank')">
+        Lihat Project
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>Project 3: Game Cloud Mabar</h3>
+      <div class="project-thumb">
+        <img src="p2.png" alt="Project 3">
+      </div>
+      <p class="project-desc-highlight">
+        Game online seru yang bisa dimainkan bersama langsung dari browser.
+      </p>
+      <button onclick="window.open('https://gameonlinefree.netlify.app/','_blank')">
+        Lihat Project
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>Project 4: Keuangan Real Time</h3>
+      <div class="project-thumb">
+        <img src="p4.png" alt="Project 4">
+      </div>
+      <p class="project-desc-highlight">
+        Aplikasi pengelolaan keuangan real-time.
+      </p>
+      <button onclick="window.open('https://viewers-duit.netlify.app/','_blank')">
+        Lihat Project
+      </button>
+    </div>
+
+    <div class="card">
+      <h3>Project 5: Tutorial Arduino IoT</h3>
+      <div class="project-thumb">
+        <img src="p5.png" alt="Project 5">
+      </div>
+      <p class="project-desc-highlight">
+        Website tutorial Arduino & IoT lengkap dengan contoh kode.
+      </p>
+      <button onclick="window.open('https://tutorial-ardunio-iot.netlify.app/','_blank')">
+        Lihat Project
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
 <section id="contact">
-    <h2 class="section-title">Terima Kasih Telah Berkunjung <span>Web saya</span></h2>
-    <div class="contact-info">
-      <p>Jangan ragu untuk menghubungi saya — baik untuk kerja sama maupun sekadar menyapa!</p>
-    </div>
-  </section>
+  <h2 class="section-title">Contact <span>Me</span></h2>
 
-  <section id="contact">
-    <h2 class="section-title">Contact <span>Me!</span></h2>
-    <div class="contact-info">
-      <p>Follow my Instagram: <a href="https://instagram.com/@aku_ampih" target="_blank">@aku_ampih</a></p> 
-      <p5>Whatsapp: <a href="https://wa.me/+6283150829789" target="_blank" rel="noopener noreferrer">Chat Pribadi</a>
-      </p5>
-    </div>
-  </section>
+  <p>Instagram: <a href="https://instagram.com/aku_ampih" target="_blank">@aku_ampih</a></p>
+  <p>WhatsApp: <a href="https://wa.me/6283150829789" target="_blank">Chat Pribadi</a></p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 by M. Nazwa Kurniawan | All Rights Reserved.</p>
-  </footer>
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>&copy; 2025 M. Nazwa Kurniawan | All Rights Reserved</p>
+</footer>
 
-  <script>
-    document.getElementById('download-cv').addEventListener('click', function() {
-      window.open('https://drive.google.com/file/d/1TiOSHgXrVDlJGsqUUwUcQ4E4ouUa7pU9/view?usp=drive_link', '_blank');
-    });
-  </script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+  document.getElementById("download-cv").onclick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1TiOSHgXrVDlJGsqUUwUcQ4E4ouUa7pU9/view",
+      "_blank"
+    );
+  };
+</script>
+
 </body>
 </html>
